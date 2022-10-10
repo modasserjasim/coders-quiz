@@ -18,6 +18,16 @@ const Header = () => {
                     <ul className='flex items-center hidden space-x-8 lg:flex'>
                         <li>
                             <Link
+                                to='/home'
+                                aria-label='Home'
+                                title='Home'
+                                className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                            >
+                                Home
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
                                 to='/topics'
                                 aria-label='Topics'
                                 title='Topics'
@@ -44,16 +54,6 @@ const Header = () => {
                                 className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                             >
                                 <p> Blog </p>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                to='/about'
-                                aria-label='About Us'
-                                title='About Us'
-                                className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
-                            >
-                                About Us
                             </Link>
                         </li>
                     </ul>
@@ -110,6 +110,14 @@ const Header = () => {
                                     </div>
                                     <nav>
                                         <ul className='space-y-4'>
+                                            <Link
+                                                to='/home'
+                                                aria-label='Home'
+                                                title='Home'
+                                                className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                            >
+                                                Home
+                                            </Link>
                                             <li>
                                                 <Link
                                                     to='/topics'
@@ -138,16 +146,6 @@ const Header = () => {
                                                     className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                                                 >
                                                     <p> Blog </p>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link
-                                                    to='/about'
-                                                    aria-label='About Us'
-                                                    title='About Us'
-                                                    className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
-                                                >
-                                                    About Us
                                                 </Link>
                                             </li>
                                         </ul>
