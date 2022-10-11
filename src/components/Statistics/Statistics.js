@@ -6,11 +6,11 @@ const Statistics = () => {
     const quizTopics = useContext(QuizContext);
     console.log(quizTopics);
     return (
-        <div className='container mx-auto p-6 py-10 lg:px-32 md:py-20'>
+        <div className='sm:container mx-auto sm:p-6 py-10 lg:px-32 md:py-20'>
             <h2 className='text-4xl text-center font-bold pb-4'>Quiz Statistics</h2>
             <p className='w-28 p-0.5 bg-cyan-400 mx-auto'></p>
 
-            <div className='sm: w-8/12 h-80 mx-auto mt-16'>
+            <div className='w-12/12 sm:w-8/12 h-80 mx-auto mt-16'>
                 <ResponsiveContainer>
                     <AreaChart data={quizTopics}
                         margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
