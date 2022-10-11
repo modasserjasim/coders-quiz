@@ -12,11 +12,11 @@ const Home = () => {
                     <h1 className="text-5xl font-bold leading-none sm:text-6xl">Welcome to
                         <span className="text-cyan-400"> Coders Quiz</span>
                     </h1>
-                    <p className="mt-6 mb-8 text-lg sm:mb-12">You can test your JavaScript and CSS skills with this Quiz. The test is not official, it's just a nice way to see how much you know, or don't know, about JavaScript and CSS.
+                    <p className="mt-6 mb-8 text-lg sm:mb-12">You can test your JavaScript, React,  CSS and Git skills with this Quiz. The test is not official, it's just a nice way to see how much you know, or don't know, about JavaScript and React.
                     </p>
                     <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-                        <Link href="/topics" className="px-8 py-3 text-lg font-semibold rounded bg-cyan-400 text-gray-900">Quiz Topics</Link>
-                        <Link href="/statistics" className="px-8 py-3 text-lg font-semibold border rounded border-gray-100 hover:bg-cyan-400 transition delay-75">Statistics</Link>
+                        <Link to="/topics" className="px-8 py-3 text-lg font-semibold rounded bg-cyan-400 text-gray-900">Quiz Topics</Link>
+                        <Link to="/statistics" className="px-8 py-3 text-lg font-semibold border rounded border-gray-100 hover:bg-cyan-400 transition delay-75">Statistics</Link>
                     </div>
                 </div>
                 <div className="md:w-6/12 flex items-center justify-center md:ml-40">
