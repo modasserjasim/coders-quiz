@@ -3,7 +3,7 @@ import React from 'react';
 const Blog = () => {
     return (
         <div className="bg-gray-50 py-10 sm:py-20 px-4">
-            <h2 className='text-4xl text-center font-bold pb-4'>3 React JS QA</h2>
+            <h2 className='text-4xl text-center font-bold pb-4'>3 React JS Q&A</h2>
             <p className='w-28 p-0.5 bg-cyan-400 mx-auto'></p>
             <div className="container bg-white max-w-4xl px-5 sm:px-10 my-7 py-6 mx-auto rounded-lg shadow-sm sm:mt-16">
                 <div className="flex items-center justify-between">

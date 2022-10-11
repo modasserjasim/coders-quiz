@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# Coders Quiz Repository
+Coders Quiz is a simple quiz test application so you can test your basic level of CSS, React, JavaScript and Git skills with this Quiz. The test is not official, it's just a nice way to see how much you know or don't know about React, JavaScript, CSS and Git.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Have fun, learn and test all the fundamentals of React, JavaScript, CSS & Git with Coders Quiz! Test your knowledge about all the basic features.
 
-## Available Scripts
+## Live Link
 
-In the project directory, you can run:
+Hosted in Netlify -> [Coders Quiz](https://coders-quiz.netlify.app/)
 
-### `npm start`
+## The features I use in this project
+- There are 4 pages in this quiz app and we are using react router dom for routing
+- In the home page, there is two sections. One is about website intro another is quiz topics.
+- For topics cards, we are using an external API to load the data.
+- When we click 'Start Quiz' the page coming with dynamic URL using loader and params.
+- On the quiz page, When you select the option, it will show either it's correct or incorrect answer with a toast.
+- The is an eye-icon, If you click on the eye-icon you will see the correct answer on popup.
+- In the statistics page, there is a chart about how many quizzes are available in each topics.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Resources & Credits
+- [ReactJS Library](https://reactjs.org/)
+- [React Router Dom](https://reactrouter.com/en/main)
+- [Context API](https://reactjs.org/docs/context.html#api)
+- [TailwindCSS Framework](https://tailwindui.com/)
+- [MambaUI Components](https://www.mambaui.com/components/)
+- [Tostify](https://fkhadra.github.io/react-toastify/introduction/)
+- [SweetAlert2](https://sweetalert2.github.io/)
+- [HeroIcons](https://heroicons.com/)

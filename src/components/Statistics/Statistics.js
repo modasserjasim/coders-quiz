@@ -4,7 +4,6 @@ import { QuizContext } from '../../layouts/Main';
 
 const Statistics = () => {
     const quizTopics = useContext(QuizContext);
-    console.log(quizTopics);
     return (
         <div className='sm:container mx-auto sm:p-6 py-10 lg:px-32 md:py-20'>
             <h2 className='text-4xl text-center font-bold pb-4'>Quiz Statistics</h2>
