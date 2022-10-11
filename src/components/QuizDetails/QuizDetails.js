@@ -6,8 +6,6 @@ const QuizDetails = () => {
     const quizDetails = useLoaderData();
     const quiz = quizDetails.data;
     const { name, questions, total } = quiz;
-    // console.log(quiz);
-    // const questions = quiz.questions;
     return (
         <div>
             <div className='container mx-auto p-6 py-10 lg:px-32 md:py-16'>
