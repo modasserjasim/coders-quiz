@@ -6,8 +6,11 @@ const Topics = () => {
     const quizTopics = useContext(QuizContext);
     console.log(quizTopics);
     return (
-        <div className='container mx-auto px-4 md:px-2'>
-            <div className='container grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:px-10 lg:px-32'>
+        <div className='container mx-auto p-6 lg:px-32 py-16'>
+            <h2 className='text-4xl font-bold pb-4'>Quiz Topics</h2>
+            <p className='w-28 p-0.5 bg-cyan-400'></p>
+
+            <div className='grid sm:grid-cols-2 lg:grid-cols-4 gap-6 py-10 md:py-16'>
                 {
                     quizTopics.map(quizTopic => <QuizTopic key={quizTopic.id} quizTopic={quizTopic}></QuizTopic>)
                 }
