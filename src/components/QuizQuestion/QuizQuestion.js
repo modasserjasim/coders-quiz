@@ -4,9 +4,14 @@ import { toast } from 'react-toastify';
 import Swal from 'sweetalert2';
 import QuestionOptions from '../QuestionOptions/QuestionOptions';
 
-const QuizQuestion = ({ quizQuestion, questions }) => {
+const QuizQuestion = ({ quizQuestion, questions, index }) => {
     const { id, question, correctAnswer, options } = quizQuestion;
     // console.log(quizQuestion);
+    // let QuizNumber = 1;
+    // for (let QuizNumber = 1; QuizNumber <= questions.length; QuizNumber++) {
+    //     const order = QuizNumber;
+    // }
+
     const handleAnswer = (option) => {
         if (option === correctAnswer) {
             toast.success('Your answer is correct!', { autoClose: 1500, toastId: id })
@@ -17,16 +22,16 @@ const QuizQuestion = ({ quizQuestion, questions }) => {
     const handleShowAnswer = () => {
         Swal.fire({
             icon: 'success',
-            title: 'The currect answer is:',
+            title: 'The correct answer is:',
             html: correctAnswer
         })
     }
     return (
         <div>
-            <div className="w-8/12 p-5 shadow-lg mx-auto rounded-md my-10">
+            <div className="md:w-8/12 p-5 shadow-lg mx-auto rounded-md my-10">
                 <div className="flex justify-between pb-4 border-bottom">
-                    <div className="flex items-center text-xl font-semibold">
-                        Quiz 1: {question}
+                    <div className="flex items-center text-md sm:text-xl font-semibold">
+                        Quiz {index + 1}: {question}
                     </div>
                     <button onClick={() => handleShowAnswer()}>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -38,7 +43,7 @@ const QuizQuestion = ({ quizQuestion, questions }) => {
                 </div>
                 <div className="grid sm:grid-cols-2">
                     {
-                        options.map(option => <QuestionOptions key={option} option={option} handleAnswer={handleAnswer}></QuestionOptions>)
+                        options.map(option => <QuestionOptions key={option} option={option} handleAnswer={handleAnswer} id={id}></QuestionOptions>)
                     }
                 </div>
             </div>

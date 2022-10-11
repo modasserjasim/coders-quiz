@@ -13,7 +13,7 @@ const QuizDetails = () => {
                 <h2 className='text-4xl text-center font-bold pb-4'>Quiz of {quiz.name}</h2>
                 <p className='w-28 p-0.5 bg-cyan-400 mx-auto'></p>
                 {
-                    questions.map(quizQuestion => <QuizQuestion key={quizQuestion.id} quizQuestion={quizQuestion} questions={questions}></QuizQuestion>)
+                    questions.map((quizQuestion, index) => <QuizQuestion key={quizQuestion.id} quizQuestion={quizQuestion} questions={questions} index={index}></QuizQuestion>)
                 }
 
             </div>
