@@ -3,11 +3,11 @@ import { Outlet, useLoaderData } from 'react-router-dom';
 import Footer from '../components/Footer/Footer';
 import Header from '../components/Header/Header';
 
-const QuizContext = createContext([]);
+export const QuizContext = createContext([]);
 const Main = () => {
     const quizTopicsData = useLoaderData();
     const quizTopics = quizTopicsData.data;
-    console.log(quizTopics);
+    // console.log(quizTopics);
     return (
         <QuizContext.Provider value={quizTopics}>
             <Header></Header>

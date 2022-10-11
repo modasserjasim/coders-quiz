@@ -87,9 +87,8 @@ const Header = () => {
                                             <Link
                                                 to='/'
                                                 aria-label='Coders Quiz'
-                                                title='Coders Quiz'
-                                                className=''>
-                                                <img src={logo} alt="Coders Quiz" />
+                                                title='Coders Quiz'>
+                                                <img src={logo} className='w-56' alt="Coders Quiz" />
                                             </Link>
                                         </div>
                                         <div>
