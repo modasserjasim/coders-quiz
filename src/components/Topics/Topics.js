@@ -4,9 +4,9 @@ import QuizTopic from '../QuizTopic/QuizTopic';
 
 const Topics = () => {
     const quizTopics = useContext(QuizContext);
-    console.log(quizTopics);
+    // console.log(quizTopics);
     return (
-        <div className='container mx-auto p-6 lg:px-32 py-16'>
+        <div className='container mx-auto p-6 py-10 lg:px-32 md:py-16'>
             <h2 className='text-4xl font-bold pb-4'>Quiz Topics</h2>
             <p className='w-28 p-0.5 bg-cyan-400'></p>
 
