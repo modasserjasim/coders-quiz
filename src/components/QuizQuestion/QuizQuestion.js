@@ -4,19 +4,14 @@ import { toast } from 'react-toastify';
 import Swal from 'sweetalert2';
 import QuestionOptions from '../QuestionOptions/QuestionOptions';
 
-const QuizQuestion = ({ quizQuestion, questions, index }) => {
+const QuizQuestion = ({ quizQuestion, index }) => {
     const { id, question, correctAnswer, options } = quizQuestion;
-    // console.log(quizQuestion);
-    // let QuizNumber = 1;
-    // for (let QuizNumber = 1; QuizNumber <= questions.length; QuizNumber++) {
-    //     const order = QuizNumber;
-    // }
 
     const handleAnswer = (option) => {
         if (option === correctAnswer) {
-            toast.success('Your answer is correct!', { autoClose: 1500, toastId: id })
+            toast.success('Your answer is correct!', { autoClose: 1000, toastId: id })
         } else {
-            toast.error('Oops! incorrect answer!', { autoClose: 1500, toastId: id })
+            toast.error('Oops! incorrect answer!', { autoClose: 1000, toastId: id })
         }
     }
     const handleShowAnswer = () => {
