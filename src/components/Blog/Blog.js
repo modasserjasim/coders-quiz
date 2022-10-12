@@ -8,7 +8,7 @@ const Blog = () => {
             <div className="container bg-white max-w-4xl px-5 sm:px-10 my-7 py-6 mx-auto rounded-lg shadow-sm sm:mt-16">
                 <div className="flex items-center justify-between">
                     <span className="text-sm">Question 1</span>
-                    <p className="px-2 py-1 font-bold rounded dark:bg-cyan-400 dark:text-gray-900">ReactJS</p>
+                    <p className="px-2 py-1 font-bold rounded bg-cyan-400 text-white">ReactJS</p>
                 </div>
                 <div className="mt-3">
                     <h2 className="text-2xl font-bold hover:underline">What is the Purpose of React Router?</h2>
@@ -24,7 +24,7 @@ const Blog = () => {
             <div className="container bg-white max-w-4xl px-5 sm:px-10 my-7 py-6 mx-auto rounded-lg shadow-sm">
                 <div className="flex items-center justify-between">
                     <span className="text-sm">Questions 2</span>
-                    <p className="px-2 py-1 font-bold rounded dark:bg-cyan-400 dark:text-gray-900">ReactJS</p>
+                    <p className="px-2 py-1 font-bold rounded bg-cyan-400 text-white">ReactJS</p>
                 </div>
                 <div className="mt-3">
                     <h2 className="text-2xl font-bold hover:underline">How does context API Works?</h2>
@@ -38,7 +38,7 @@ const Blog = () => {
             <div className="container bg-white max-w-4xl px-5 sm:px-10 my-7 py-6 mx-auto rounded-lg shadow-sm">
                 <div className="flex items-center justify-between">
                     <span className="text-sm">Questions 3</span>
-                    <p className="px-2 py-1 font-bold rounded dark:bg-cyan-400 dark:text-gray-900">ReactJS</p>
+                    <p className="px-2 py-1 font-bold rounded bg-cyan-400 text-white">ReactJS</p>
                 </div>
                 <div className="mt-3">
                     <h2 className="text-2xl font-bold hover:underline">What is useRef Hook?</h2>
