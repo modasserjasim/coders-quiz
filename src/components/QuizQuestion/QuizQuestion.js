@@ -3,19 +3,19 @@ import { toast } from 'react-toastify';
 import Swal from 'sweetalert2';
 import './QuizQuestion.css'
 
-const QuizQuestion = ({ quizQuestion, index }) => {
+const QuizQuestion = ({ quizQuestion, index, correctCount, setCorrectCount }) => {
     const { id, question, correctAnswer, options } = quizQuestion;
     const questionName = question.replace(/(<([^>]+)>)/ig, '');
 
     const [selectedAnswer, setSelectedAnswer] = useState(null);
     const [createClass, setCreateClass] = useState("answer");
 
-    // console.log(selectedAnswer);
-
     const handleAnswer = (option) => {
         setSelectedAnswer(option);
         if (option === correctAnswer) {
             setCreateClass("correct-answer")
+            const correctAnswer = correctCount + 1;
+            setCorrectCount(correctAnswer);
             toast.success('Your answer is correct!', { autoClose: 1500 });
         } else {
             setCreateClass("wrong-answer")
