@@ -7,7 +7,7 @@ import Topics from '../Topics/Topics';
 const Home = () => {
     return (
         <div>
-            <div className="container flex flex-col justify-center p-6 mx-auto md:py-24 md:px-10 lg:px-32 lg:flex-row lg:justify-between">
+            <div className="container flex flex-col justify-center p-6 mx-auto md:py-24 md:px-10 lg:px-32 lg:flex-row lg:justify-between -z-50">
                 <div className="flex flex-col justify-center text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left md:w-6/12">
                     <h1 className="text-5xl font-bold leading-none sm:text-6xl">Welcome to
                         <span className="text-cyan-400"> Coders Quiz</span>

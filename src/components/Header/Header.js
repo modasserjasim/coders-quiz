@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logo from '../../assets/coders-quiz.png'
 
 const Header = () => {
@@ -17,44 +17,44 @@ const Header = () => {
                     </Link>
                     <ul className='flex items-center hidden space-x-8 lg:flex'>
                         <li>
-                            <Link
+                            <NavLink
                                 to='/home'
                                 aria-label='Home'
                                 title='Home'
-                                className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                className={({ isActive }) => isActive ? 'font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 border-b-4 border-cyan-400 pb-3 text-cyan-500' : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400 hover:text-cyan-400'}
                             >
                                 Home
-                            </Link>
+                            </NavLink>
                         </li>
                         <li>
-                            <Link
+                            <NavLink
                                 to='/topics'
                                 aria-label='Topics'
                                 title='Topics'
-                                className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                className={({ isActive }) => isActive ? 'font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 border-b-4 border-cyan-400 pb-3 text-cyan-500' : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400 hover:text-cyan-400'}
                             >
                                 Topics
-                            </Link>
+                            </NavLink>
                         </li>
                         <li>
-                            <Link
+                            <NavLink
                                 to='/statistics'
                                 aria-label='Statistics'
                                 title='Statistics'
-                                className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                className={({ isActive }) => isActive ? 'font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 border-b-4 border-cyan-400 pb-3 text-cyan-500' : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400 hover:text-cyan-400'}
                             >
                                 Statistics
-                            </Link>
+                            </NavLink>
                         </li>
                         <li>
-                            <Link
+                            <NavLink
                                 to='/blog'
                                 aria-label='Blog'
                                 title='Blog'
-                                className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                className={({ isActive }) => isActive ? 'font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 border-b-4 border-cyan-400 pb-3 text-cyan-500' : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400 hover:text-cyan-400'}
                             >
-                                <p> Blog </p>
-                            </Link>
+                                Blog
+                            </NavLink>
                         </li>
                     </ul>
                     <div className='lg:hidden'>
@@ -109,43 +109,43 @@ const Header = () => {
                                     </div>
                                     <nav>
                                         <ul className='space-y-4'>
-                                            <Link
+                                            <NavLink
                                                 to='/home'
                                                 aria-label='Home'
                                                 title='Home'
-                                                className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                                className={({ isActive }) => isActive ? 'font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 border-b-4 border-cyan-400 pb-3 text-cyan-500' : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400 hover:text-cyan-400'}
                                             >
                                                 Home
-                                            </Link>
+                                            </NavLink>
                                             <li>
-                                                <Link
+                                                <NavLink
                                                     to='/topics'
                                                     aria-label='Topics'
                                                     title='Topics'
-                                                    className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                                    className={({ isActive }) => isActive ? 'font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 border-b-4 border-cyan-400 pb-3 text-cyan-500' : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400 hover:text-cyan-400'}
                                                 >
                                                     Topics
-                                                </Link>
+                                                </NavLink>
                                             </li>
                                             <li>
-                                                <Link
+                                                <NavLink
                                                     to='/statistics'
                                                     aria-label='Statistics'
                                                     title='Statistics'
-                                                    className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                                    className={({ isActive }) => isActive ? 'font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 border-b-4 border-cyan-400 pb-3 text-cyan-500' : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400 hover:text-cyan-400'}
                                                 >
                                                     Statistics
-                                                </Link>
+                                                </NavLink>
                                             </li>
                                             <li>
-                                                <Link
+                                                <NavLink
                                                     to='/blog'
                                                     aria-label='Blog'
                                                     title='Blog'
-                                                    className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                                    className={({ isActive }) => isActive ? 'font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400 border-b-4 border-cyan-400 pb-3 text-cyan-500' : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400 hover:text-cyan-400'}
                                                 >
-                                                    <p> Blog </p>
-                                                </Link>
+                                                    Blog
+                                                </NavLink>
                                             </li>
                                         </ul>
                                     </nav>

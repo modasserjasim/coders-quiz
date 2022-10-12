@@ -1,16 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { toast } from 'react-toastify';
 import Swal from 'sweetalert2';
-import QuestionOptions from '../QuestionOptions/QuestionOptions';
+import './QuizQuestion.css'
 
 const QuizQuestion = ({ quizQuestion, index }) => {
     const { id, question, correctAnswer, options } = quizQuestion;
     const questionName = question.replace(/(<([^>]+)>)/ig, '');
 
+    const [selectedAnswer, setSelectedAnswer] = useState(null);
+    const [createClass, setCreateClass] = useState("answer");
+
+    // console.log(selectedAnswer);
+
     const handleAnswer = (option) => {
+        setSelectedAnswer(option);
         if (option === correctAnswer) {
+            setCreateClass("correct-answer")
             toast.success('Your answer is correct!', { autoClose: 1500 });
         } else {
+            setCreateClass("wrong-answer")
             toast.error('Oops! incorrect answer!', { autoClose: 1500 });
         }
     }
@@ -25,9 +33,9 @@ const QuizQuestion = ({ quizQuestion, index }) => {
     }
     return (
         <div>
-            <div className="md:w-8/12 p-5 shadow-lg mx-auto rounded-md my-10">
-                <div className="flex justify-between pb-4 border-bottom">
-                    <div className="flex items-center text-md sm:text-xl font-semibold">
+            <div className="md:w-8/12 p-5 drop-shadow-xl shadow-gray-200 shadow-2xl mx-auto rounded-md my-10 border">
+                <div className="flex justify-between items-start pb-4 border-bottom">
+                    <div className="text-md sm:text-xl font-semibold">
                         Quiz {index + 1}: {questionName}
                     </div>
                     <button onClick={() => handleShowAnswer()} title='Show Answer'>
@@ -40,9 +48,16 @@ const QuizQuestion = ({ quizQuestion, index }) => {
                 </div>
                 <div className="grid sm:grid-cols-2">
                     {
-                        options.map(option => <QuestionOptions key={option} option={option} handleAnswer={handleAnswer} id={id}></QuestionOptions>)
+                        options.map((option) => (
+                            <div key={option} className={selectedAnswer === option ? createClass : "answer"}>
+                                <label className="inline-flex items-center">
+                                    <input onClick={() => handleAnswer(option)} type="radio" className="form-radio" name={id} value={option} />
+                                    <span className="ml-3 text-md">{option}</span>
+                                </label>
+                            </div>))
                     }
                 </div>
+
             </div>
         </div>
     );
